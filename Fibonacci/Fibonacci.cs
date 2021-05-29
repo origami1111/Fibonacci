@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Fibonacci
 {
@@ -13,7 +9,7 @@ namespace Fibonacci
         private uint m;
 
         public Fibonacci() { }
-        public Fibonacci(uint length)
+        public Fibonacci(uint length) 
         {
             this.length = length;
         }
@@ -23,7 +19,7 @@ namespace Fibonacci
             this.m = m;
         }
 
-        public void fibonacciLength()
+        public void FibonacciByLength()
         {
             uint j = 1;
             for (uint i = 1; i <= length; i += j)
@@ -34,8 +30,7 @@ namespace Fibonacci
 
             Console.WriteLine();
         }
-
-        public void fibonacciRange()
+        public void FibonacciByRange()
         {
             uint j = 1;
             for (uint i = n; i <= m; i += j)
